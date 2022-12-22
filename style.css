@@ -1,0 +1,571 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,body{
+  font-family: poppins;
+  background-color: rgb(254, 249, 231);
+}
+
+:root {
+  --nav-green: #15241F;
+  --pink:rgba(216, 27, 96,1.0);
+  --lightpink:rgba(244, 143, 177,1.0);
+  --white:white;
+  --lightpink2:rgba(255, 235, 238,1.0);
+}
+
+ul{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+/* logo and navbar------------------------------ */
+header{
+  position: sticky;
+  max-width: 2600px;
+}
+
+.logo{
+  width: 30%;
+  margin-left: 60px;
+}
+.logo h3{
+  color:var(--white) ;
+}
+.logo span{
+  color: var(--pink);
+}
+.logo p{
+  font-size: 10px;
+  font-weight: 200;
+  color: var(--lightpink2);
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  background-color: var(--nav-green);
+  padding: 3px 0;
+
+}
+
+.navbar{
+  margin-right: 60px;
+  width: 70%;
+}
+.navbar ul{
+  display: flex;
+  justify-content: end;
+  font-size: 13px;
+  gap: 14px;
+}
+
+.navbar ul li a{
+  color: var(--lightpink);
+}
+
+.navbar ul li a:hover{
+  color: var(--pink);
+  transition: 0.3s;
+}
+
+.navbar ul li a.active{
+  color: var(--pink);
+}
+
+/* header banner------------------------- */
+.header-des{
+  text-align: center;
+  font-size: 12px;
+  background-color: var(--pink);
+  word-spacing: 3px;
+  padding: 3px
+}
+
+.header-des span{
+  color: var(--lightpink2);
+  font-size: 10px;
+  text-transform: lowercase;
+}
+
+/* ----------FIRST-SECTION-------------------- */
+/*need to know about text resize with screen size--  */
+
+
+
+.first-section{
+  background-image:url(images/first-sec-cover.jpg);
+  background-size: cover;
+  background-position:center;
+  height: 60vh;
+  position: relative;
+}
+
+.content-section{
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  color: var(--white);
+}
+
+.header-p{
+  width: 250px;
+  border-bottom: 1px solid var(--pink);
+  color: var(--pink);
+}
+
+.content-section h1{
+  font-size: 35px;
+}
+
+.content-section h3{
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0.06em;
+  max-width: 350px;
+}
+
+.content-section .desc-p{
+  width: 180px;
+  font-size: 10px;
+  text-align: justify;
+  margin-top: 5px;
+}
+
+.shopnow-btn{
+  margin-top: 20px;
+}
+
+.shopnow-btn a, .about a{
+  font-size: 10px;
+  color: var(--pink);
+  font-size: 10px;
+  padding: 5px 7px;
+  background-color: transparent;
+  border: 1px solid var(--pink);
+}
+
+.shopnow-btn a:hover{
+  background-color: var(--pink);
+  color: white;
+  border: 1px solid var(--pink);
+  transition: 0.3s;
+}
+
+/* --need gradient with background image-- */
+
+
+
+
+
+/* RANKING SECTION------ */
+
+.ranking-section{
+  height: 40vh;
+}
+
+.data-conteiner{
+/*------------ need align vertically with screen ratio */
+  transform: translateY(80%);
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+  background-color: var(--pink);
+  border-radius: 8px;
+  padding: 23px;
+  color: var(--white);
+}
+
+.data-conteiner p{
+  font-size: 11px;
+  margin-top: -8px;
+} 
+
+
+/* -----six-grid section------ */
+
+.grid-section{
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 50px;
+}
+
+.flex-list h4{
+  color: var(--pink);
+}
+
+.flex-list ul li{
+  font-size: 13px;
+  color: grey;
+  text-transform: uppercase;
+}
+
+
+
+/* first2ladie-section----------- */
+
+.first2ladie{
+  position: relative;
+  margin-top: 150px;
+  height: 60vw;
+}
+
+.first2ladie .one-ladie img{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  width: 50%;
+  position: absolute;
+  top: 20%;
+  border-radius: 0 5px 5px 0;
+}
+
+.first2ladie .two-ladie img{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  width: 60%;
+  right: 0;
+  margin-top: -8%;
+  position: absolute;
+  border-radius: 5px 0 0 5px;
+
+}
+
+.about{
+  position: absolute;
+  width: 30%;
+  right: 10%;
+  margin-top: 30%;
+  text-align: justify;
+}
+.about p{
+  margin-bottom: 15px;
+  font-size: 12px;
+  overflow: hidden;
+  max-height: 150px;
+} 
+
+.about a{
+  font-size: 10px;
+  color: var(--pink);
+  font-size: 10px;
+  padding: 5px 7px;
+  background-color: transparent;
+  border: 1px solid var(--pink);
+}
+
+.about a:hover{
+  background-color: var(--pink);
+  color: white;
+  border: 1px solid var(--pink);
+  transition: 0.3s;
+}
+
+/* ----------------card--------------- */
+.card-section{
+  padding: 10px 150px;
+}
+
+.grid-card{
+  row-gap: 10px;
+  column-gap: 30px;
+  row-gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.card img{
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card{
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  max-height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.card:hover{
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.card h2{
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.card p{
+  font-size: 12px;
+}
+
+.card .btn{
+  text-align: center;
+  margin: 13px;
+}
+
+.card .btn a{
+  color: var(--pink);
+  border: 1px solid var(--pink);
+  padding: 5px 7px;
+  font-size: 10px;
+}
+
+.card .btn a:hover{
+  background-color: var(--pink);
+  color: var(--white);
+  transition: 0.3s;
+}
+
+.card-section h1{
+  margin-bottom: 10px;
+}
+
+/* second2ladie-section----------- */
+
+.second2ladie{
+  position: relative;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  height: 50vw;
+}
+
+.second2ladie .three-ladie img{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  width: 50%;
+  position: absolute;
+  z-index: 1;
+  border-radius: 0 5px 5px 0;
+}
+
+.second2ladie .four-ladie img{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  width: 60%;
+  position: absolute;
+  top: 20vh;
+  right: 0;
+  border-radius: 5px 0 0 5px;
+}
+
+.about2{
+  position: absolute;
+  width: 30%;
+  top: 80%;
+  margin-left: 5%;
+  text-align: justify;
+}
+
+.about2 p{
+  margin-bottom: 15px;
+  font-size: 12px;
+  height: fit-content;
+} 
+.about2 a:hover{
+  background-color: var(--pink);
+  color: white;
+  border: 1px solid var(--pink);
+  transition: 0.3s;
+}
+
+.about2 a{
+  font-size: 10px;
+  color: var(--pink);
+  font-size: 10px;
+  padding: 5px 7px;
+  background-color: transparent;
+  border: 1px solid var(--pink);
+}
+
+/* ----signup section-------------- */
+
+.signup-section{
+  text-align: center;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.signup-item-flex{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 60%;
+  background-color: var(--pink);
+  padding: 25px 0;
+  border-radius: 5px;
+  
+}
+
+.signup-item-flex h4{
+  color: var(--white);
+}
+
+.signup-content-flex .email {
+  padding: 0 30px;
+  border-radius: 3px;
+  margin: 0 10px;
+  font-family: poppins;
+
+}
+.signup-content-flex .submit {
+  font-family: poppins;
+  padding: 0 20px;
+  border-radius: 3px;
+  background-color: black;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.signup-content-flex .submit:hover{
+  background-color: white;
+  color: black;
+  border-color: white;
+  transform: scaleX(1.1);
+  transition: 0.5s;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  background-color: var(--nav-green);
+  color: var(--lightpink2);
+}
+
+.logo2 span{
+  color: var(--pink);
+}
+
+.fb-insta> i{
+  margin: 0 5px;
+}
+
+
+
+/* ------------RESPONSIVE---------------- */
+@media screen and (max-width: 857px){
+  .navbar ul{
+    display: flex;
+    gap:4px;
+    font-size: 12px;
+  }
+  .logo{
+    width: 30%;
+  }
+  .navbar{
+    width: 70%;
+  }
+  .content-section{
+    transform: scale(.9);
+  }
+  .grid-card{
+    column-gap: 20px;
+    row-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card-section{
+    padding: 5px 90px;
+  }
+  .card-section h1{
+    margin-bottom: 8px;
+    font-size: 22px;
+  }
+  .about2 p{
+    font-size: 10px;
+  }
+  .about2 h2{
+    font-size: 15px;
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 683px){
+  .navbar ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .logo{
+    width: 30%;
+    margin-right: 5px;
+    transform: translateX(-20px);
+  }
+  .navbar{
+    width: 70%;
+    border-left: 2px solid var(--pink);
+    margin-right: 10px;
+  }
+  .content-section{
+    transform: scale(.7);
+  }
+  .shopnow-btn a{
+    font-size: 8px;
+  padding: 3px 4px;
+  }
+  .data-conteiner{
+    font-size: 1vh;
+    width: 90%;
+  }
+  .data-conteiner p{
+    margin-top: 0.1em;
+  }
+  .about p{
+    font-size: 10px;
+  }
+  .grid-card{
+    row-gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+    /* width: 80%; */
+  }
+  .card-section{
+    margin-top: 10vw;
+    padding: 5px 50px;
+  }
+  .card-section h1{
+    margin-bottom: 5px;
+    font-size: 17px;
+  }
+  
+  .about2 p{
+    font-size: 8px;
+  }
+  .about2 h2{
+    font-size: 12px;
+  }
+  .signup-item-flex{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+  }
+  .signup-item-flex .submit{
+    margin-top: 10px;
+  }
+  .signup-content-flex .email {
+  width: 70%;
+  }
+  .signup-content-flex .email::placeholder {
+    font-size: 8px;
+  }
+  footer .copyright{
+    font-size: smaller;
+  }
+}
