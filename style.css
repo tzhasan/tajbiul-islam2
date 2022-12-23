@@ -17,6 +17,7 @@ html,body{
   --lightpink:rgba(244, 143, 177,1.0);
   --white:white;
   --lightpink2:rgba(255, 235, 238,1.0);
+  --background-color:rgb(254, 249, 231);
 }
 
 ul{
@@ -32,7 +33,6 @@ a{
 header{
   position: sticky;
   width: 100%;
-  /* max-width: 2600px; */
 }
 
 .logo{
@@ -115,7 +115,8 @@ nav{
   position: absolute;
   top: 10%;
   left: 10%;
-  color: var(--white);
+  color: var(--background-color);
+  text-shadow: 2px 2px 5px black;
 }
 
 .header-p{
@@ -129,7 +130,6 @@ nav{
 }
 
 .content-section h3{
-  /* width: max-content; */
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 0.06em;
